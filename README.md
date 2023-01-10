@@ -1,0 +1,54 @@
+# RegressionPipeliner
+
+![Page views](https://visitor-badge.glitch.me/badge?page_id=gmrandazzo.RegressionPipeliner)
+
+Regressionif Pipeliner
+
+## Requirements
+
+- tensorflow
+- openbabel
+- scikit-learn
+- numpy
+- codecarbon
+
+## What you will find
+
+Here you will find any regression classification model.
+Just navigate to see the results.
+
+## How to read the data
+Look at Q2 in validation which is a R2
+
+## Materials and Methods
+
+All the calculations are performed on a Workstation with:
+
+GPU: NVIDIA GeForce RTX 3070
+CPU: AMD Ryzen 5 3600 6-Core Processor
+RAM: 32GB
+
+and running:
+
+- python 3.7.12
+- tensorflow 2.7.0
+- scikit-learn 0.24.1
+- libscientific 1.4.1
+
+## License
+
+Copyright (C) <2022>  Giuseppe Marco Randazzo <gmrandazzo@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
