@@ -41,7 +41,8 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from libscientific.pls import PLS
-
+import xgboost as xgb
+import catboost as catb
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
@@ -281,7 +282,7 @@ def pls(split : Split):
     return p_y_val
 
 
-def pls_da_sklearn(split : Split):
+def pls_sklearn(split : Split):
     sc = StandardScaler()
     sc.fit(split.x_train)
     y_pred = [[0 for j in range(6)] for i in range(len(split.x_test))]
@@ -310,13 +311,45 @@ def pls_da_sklearn(split : Split):
     return clf.predict(sc.transform(split.x_val))
 
 
+def xgbreg(split : Split):
+    hp = {'base_score': 0.5,
+         'colsample_bylevel': 1,
+         'colsample_bytree': 0.66,
+         'gamma': 0,
+         'learning_rate': 0.05,
+         'max_delta_step': 1,
+         'max_depth': 5,
+         'min_child_weight': 5,
+         'n_estimators': 3000,
+         'reg_alpha': 0,
+         'reg_lambda': 1,
+         'scale_pos_weight': 1,
+         'subsample': 0.53}
+    reg = xgb.XGBRegressor(**hp)
+    reg.fit(split.x_train, split.y_train,
+            eval_set=[(split.x_test, split.y_test)],
+            verbose=0)
+    return reg.predict(split.x_val)
+
+
+def catbreg(split : Split):
+    hp = {'iterations': 3000,
+          'learning_rate': 0.05,
+           'depth': 5,
+           'nan_mode': 'Forbidden',
+           'use_best_model': True,
+           'allow_const_label': True}
+    reg = catb.CatBoostRegressor(**hp)
+    reg.fit(split.x_train, split.y_train,
+            eval_set=[(split.x_test, split.y_test)])
+    return reg.predict(split.x_val)
+
+
 def regress(split : Split):
     """
     Regress using sklearn and tensorflow models
     """
     print(">> Regress ")
-
-
     names = [
         "Linear-SVR",
         "RBF-SVR",
@@ -364,13 +397,25 @@ def regress(split : Split):
     emissions_results["PLS"] = float(tracker.stop())
     """
     Scikit learn PLS performance is worst than the NIPALS libscientific one
-
+    """
     print(" * Calculating PLS sklearn")
     tracker = OfflineEmissionsTracker(country_iso_code="CHE")
     tracker.start()
-    regress_results["PLS-SKLEARN"] = pls_da_sklearn(split)
+    regress_results["PLS-SKLEARN"] = pls_sklearn(split)
     emissions_results["PLS-SKLEARN"] = float(tracker.stop())
-    """
+
+    print(" * Calculating XGBoost")
+    tracker = OfflineEmissionsTracker(country_iso_code="CHE")
+    tracker.start()
+    regress_results["XGBoost"] = xgbreg(split)
+    emissions_results["XGBoost"] = float(tracker.stop())
+
+    print(" * Calculating CatBoost")
+    tracker = OfflineEmissionsTracker(country_iso_code="CHE")
+    tracker.start()
+    regress_results["CatBoost"] = catbreg(split)
+    emissions_results["CatBoost"] = float(tracker.stop())
+
     print(" * Calculating DNN")
     tracker = OfflineEmissionsTracker(country_iso_code="CHE")
     tracker.start()
