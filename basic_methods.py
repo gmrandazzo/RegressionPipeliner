@@ -306,6 +306,8 @@ def pls_sklearn(split : Split):
         else:
             break
     c = np.argmax(res)
+    if c == 0:
+        c = 1
     clf = PLSRegression(n_components=c)
     clf.fit(sc.transform(split.x_train), split.y_train)
     return clf.predict(sc.transform(split.x_val))
