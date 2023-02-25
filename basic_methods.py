@@ -210,7 +210,7 @@ def tf_dnn(split : Split):
     """
     TUNING PARAMETERS
     """
-    nunits = 256
+    nunits = nfeatures
     ndense_layers = 2
     epochs_= 300
     batch_size_ = 20
@@ -256,8 +256,8 @@ def tf_dnn(split : Split):
     del model
     return y_val_pred
 
-def pls(split : Split):
-    clf = PLS(nlv=6, xscaling=1, yscaling=0)
+def pls(split : Split, nlv = 50):
+    clf = PLS(nlv=nlv, xscaling=1, yscaling=0)
     y_train = [[item] for item in split.y_train]
     clf.fit(split.x_train, y_train)
     p_c_y_test, _ = clf.predict(split.x_test)
@@ -282,11 +282,11 @@ def pls(split : Split):
     return p_y_val
 
 
-def pls_sklearn(split : Split):
+def pls_sklearn(split : Split, nlv=50):
     sc = StandardScaler()
     sc.fit(split.x_train)
-    y_pred = [[0 for j in range(6)] for i in range(len(split.x_test))]
-    for nlv in range(1, 6):
+    y_pred = [[0 for j in range(nlv)] for i in range(len(split.x_test))]
+    for nlv in range(1, nlv):
         clf = PLSRegression(n_components=nlv)
         clf.fit(sc.transform(split.x_train), split.y_train)
         ypred = clf.predict(sc.transform(split.x_test))
@@ -378,12 +378,12 @@ def regress(split : Split):
         KNeighborsRegressor(n_neighbors=5)
     ]
 
-
     """
     In this case we do not use the test set for algorithm reasons.
     """
     regress_results = {}
     emissions_results = {}
+    
     for name, clf in zip(names, regressor):
         print(" * Calculating %s" % (name))
         tracker = OfflineEmissionsTracker(country_iso_code="CHE")
@@ -400,6 +400,7 @@ def regress(split : Split):
     """
     Scikit learn PLS performance is worst than the NIPALS libscientific one
     """
+
     print(" * Calculating PLS sklearn")
     tracker = OfflineEmissionsTracker(country_iso_code="CHE")
     tracker.start()
@@ -454,6 +455,7 @@ def best_regressor(xdict : dict,
     split = split_fnc(xdict, x_header, ydict, 2785)
     regress_results, emissions_results = regress(split)
     return elaborate_results(split.y_val, regress_results, emissions_results), split
+
 
 def write_results(res, out_name):
     fig, axs = plt.subplots(2, 2, sharex=False, sharey=False)

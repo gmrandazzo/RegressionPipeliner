@@ -2,7 +2,7 @@
 
 ![Page views](https://visitor-badge.glitch.me/badge?page_id=gmrandazzo.RegressionPipeliner)
 
-Regressionif Pipeliner
+Regression Pipeliner
 
 ## Requirements
 
