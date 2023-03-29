@@ -449,9 +449,9 @@ def best_regressor(xdict : dict,
                    ydict : dict,
                    split_fnc=make_split):
     """
-    Find the best classifier
+    Find the best regressor
     """
-    print(">> Search for best classifier")
+    print(">> Search for best regressor")
     split = split_fnc(xdict, x_header, ydict, 2785)
     regress_results, emissions_results = regress(split)
     return elaborate_results(split.y_val, regress_results, emissions_results), split
