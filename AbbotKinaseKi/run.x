@@ -1,10 +1,10 @@
-#python3 make_model.py dataset.rdkit_dscriptors.csv ChEMBL_Navigating_the_Kinome_Ki.csv
+python3 make_model.py dataset.rdkit_dscriptors.csv ChEMBL_Navigating_the_Kinome_Ki.csv
 #mkdir RDKitDescriptorsResults;
-#mv *.json *.png RDKitDescriptorsResults
+mv *.json *.png RDKitDescriptorsResults
 
-#python3 make_model.py dataset.morgan_ecfp.csv ChEMBL_Navigating_the_Kinome_Ki.csv
+python3 make_model.py dataset.morgan_ecfp.csv ChEMBL_Navigating_the_Kinome_Ki.csv
 #mkdir RDKitECFPMorganFP;
-#mv *.json *.png RDKitECFPMorganFP
+mv *.json *.png RDKitECFPMorganFP
 
 rm rdkit_desc_table_results.csv
 echo "Kin-Method,MSE,MAE,R2,Emission(kW)" >> rdkit_desc_table_results.csv
@@ -19,5 +19,5 @@ python3 analyze_by_kinase_and_method.py rdkit_desc_table_results.csv rdkit_desc_
 python3 analyze_by_method.py rdkit_ecfp_table_results.csv rdkit_ecfp_table_results.png "Average Prediction Method Results using ECPF"
 python3 analyze_by_method.py rdkit_desc_table_results.csv rdkit_desc_table_results.png "Average Prediction Method Results using Descriptors"
 
-mkdir FinalResults
+#mkdir FinalResults
 mv *.png FinalResults
