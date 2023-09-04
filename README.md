@@ -1,16 +1,16 @@
 # RegressionPipeliner
 
-![Page views](https://visitor-badge.glitch.me/badge?page_id=gmrandazzo.RegressionPipeliner)
-
 Regression Pipeliner
 
 ## Requirements
 
 - tensorflow
-- openbabel
 - scikit-learn
 - numpy
 - codecarbon
+- libscientific
+- catboost
+- xgboost
 
 ## What you will find
 
@@ -18,6 +18,7 @@ Here you will find any regression classification model.
 Just navigate to see the results.
 
 ## How to read the data
+
 Look at Q2 in validation which is a R2
 
 ## Materials and Methods
@@ -37,7 +38,7 @@ and running:
 
 ## License
 
-Copyright (C) <2022>  Giuseppe Marco Randazzo <gmrandazzo@gmail.com>
+Copyright (C) <2022>  Giuseppe Marco Randazzo [gmrandazzo@gmail.com](mailto:gmrandazzo@gmail.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -51,4 +52,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-

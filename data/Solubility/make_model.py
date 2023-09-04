@@ -25,10 +25,8 @@ Run several classifiers also a neural network and get the best model
 """
 
 import sys
-import numpy as np
 import os
 from copy import copy
-from pathlib import Path
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append("%s/../" % (dir_path))
 from basic_methods import best_regressor
@@ -44,13 +42,10 @@ def readinput(f_inp):
         if "Molecule" in line:
             x_header = v[1:]
         else:
-            x_dict[v[0]] = list()
-            for item in v[1:]:
-                if len(item) > 0:
-                    x_dict[v[0]].append(float(item))
-                else:
-                    x_dict[v[0]].append(np.nan)
-            #x_dict[v[0]] = [float(item) for item in v[1:]]
+            if len(v) > 2:
+                x_dict[v[0]] = [float(item) for item in v[1:]]
+            else:
+                x_dict[v[0]] = float(v[1])
     f.close()
     if x_header == None:
         x_header = ["Feat%d" % (i+1) for i in range(len(v[1:]))]
@@ -59,27 +54,16 @@ def readinput(f_inp):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage %s [CSV features input] [CSV activities]" % (sys.argv[0]))
+        print("Usage %s [CSV features input] [CSV activity]" % (sys.argv[0]))
     else:
         x_dict, x_header = readinput(sys.argv[1])
         y_dict, y_header = readinput(sys.argv[2])
-        for j in range(len(y_header)):
-            kin = {}
-            for key in y_dict.keys():
-                if np.isnan(y_dict[key][j]) == False:
-                    kin[key] = -1*np.log10(y_dict[key][j]+1)
-                else:
-                    continue
-            if len(kin.keys()) >= 40:
-                if Path("%s.json" % (y_header[j])).is_file() == True:
-                    print("%s calculated" % (y_header[j]))
-                else:
-                    res, _ = best_regressor(x_dict, x_header, kin)
-                    write_results(res, y_header[j])
-                    os.remove("emissions.csv")
-            else:
-                continue
+        res, _ = best_regressor(x_dict, x_header, y_dict)
+        outname = copy(sys.argv[1])
+        outname = outname.replace(".csv", "")
+        write_results(res, outname)
     return
+
 
 if __name__ in "__main__":
     main()

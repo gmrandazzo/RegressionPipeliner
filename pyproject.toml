@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "cython ~= 0.29.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "regressionpipeliner"
+authors = [{name = "Giuseppe Marco Randazzo", email= "gmrandazzo@gmail.com"}]
+description = "Regression Pipeliner"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = []
+dynamic = ["version"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["regressionpipeliner*"]
+exclude = []
+namespaces = false
+[tool.setuptools.dynamic]
+version = {attr = "regressionpipeliner.__version__"}
