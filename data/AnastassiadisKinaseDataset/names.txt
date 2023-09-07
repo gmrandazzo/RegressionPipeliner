@@ -1,0 +1,179 @@
+compound name	compound CAS#
+ATM Kinase Inhibitor	587871-26-9
+ATM/ATR Kinase Inhibitor	905973-89-9
+AG 1024	65678-07-1
+AGL 2043	226717-28-8
+Akt Inhibitor IV	681281-88-9
+Akt Inhibitor V, Triciribine	35943-35-2
+Akt Inhibitor VIII, Isozyme-Selective, Akti-1/2	612847-09-3
+Akt Inhibitor X	925681-41-0
+Alsterpaullone	237430-03-4
+Alsterpaullone                  2-Cyanoethyl	852527-97-0
+Aloisine A, RP107	496864-16-5
+Aloisine, RP106	496864-15-4
+Aminopurvalanol A	220792-57-4
+AMPK Inhibitor,                  Compound C	866405-64-3
+Aurora Kinase Inhibitor III	879127-16-9
+Aurora Kinase/Cdk Inhibitor	443797-96-4
+BAY 11-7082	19542-67-7
+Bcr-abl Inhibitor	778270-11-4
+Bisindolylmaleimide I	133052-90-1
+Bisindolylmaleimide IV	119139-23-0
+Bohemine	189232-42-6
+BPIQ-I	174709-30-9
+Cdk1 Inhibitor	220749-41-7
+Cdk1 Inhibitor,                    CGP74514A	190654-01-4
+Cdk1/2 Inhibitor III	443798-55-8
+Cdk1/5 Inhibitor	40254-90-8
+Casein Kinase I Inhibitor, D4476	301836-43-1
+Casein Kinase II Inhibitor III, TBCA	934358-00-6
+Cdk4 Inhibitor	546102-60-7
+Cdk4 Inhibitor II                NSC 625987	141992-47-4
+Cdk4 Inhibitor III	265312-55-8
+Cdc2-Like Kinase Inhibitor, TG003	300801-52-9
+Cdk/Crk Inhibitor	784211-09-2
+Chelerythrine Chloride	3895-92-9
+Chk2 Inhibitor II	516480-79-8
+Compound 52	212779-48-1
+Compound 56	171745-13-4
+Cdk2 Inhibitor III	199986-75-9
+Cdk2 Inhibitor IV,                 NU6140	444723-13-1
+DNA-PK Inhibitor II	154447-35-5
+DNA-PK Inhibitor III	404009-40-1
+DNA-PK Inhibitor V	404009-46-7
+Diacylglycerol Kinase Inhibitor II	120166-69-0
+DMBI	5812-07-7
+EGFR/ErbB-2 Inhibitor	179248-61-4
+EGFR Inhibitor	879127-07-8
+EGFR/ErbB-2/ErbB-4 Inhibitor 	881001-19-0
+ERK Inhibitor II, FR180204	865362-74-9
+ERK Inhibitor III	345616-52-6
+Fascaplysin, Synthetic	114719-57-2
+Flt-3 Inhibitor	301305-73-7
+Flt-3 Inhibitor II	896138-40-2
+Flt-3 Inhibitor III	852045-46-6
+cFMS Receptor Tyrosine Kinase Inhibitor	870483-87-7
+GSK-3b Inhibitor I	327036-89-5
+GSK-3b Inhibitor II	478482-75-6
+GSK-3b Inhibitor VIII	487021-52-3
+GSK-3 Inhibitor IX	667463-62-9
+GSK-3 Inhibitor X	740841-15-0
+GSK-3b Inhibitor XI	626604-39-5
+GSK3b Inhibitor XII, TWS119 	601514-19-6
+GSK-3 Inhibitor XIII	404828-08-6
+Gö 6976 	136194-77-9
+Gö 6983	133053-19-7
+GTP-14564	34823-86-4
+Isogranulatimide	244148-46-7
+H-89, Dihydrochloride	127243-85-0
+HA 1077, Dihydrochloride                              Fasudil	103745-39-7
+Herbimycin A, Streptomyces sp.	70563-58-5
+IC261	186611-52-9
+IKK-2 Inhibitor IV	507475-17-4
+Indirubin Derivative E804	854171-35-0
+Indirubin-3′-monoxime	160807-49-8
+IGF-1R Inhibitor II	196868-63-0
+IRAK-1/4 Inhibitor	509093-47-4
+JAK Inhibitor I	457081-03-7
+JAK3 Inhibitor II	211555-04-3
+JNK Inhibitor II	129-56-6
+JAK3 Inhibitor IV	58753-54-1
+JNK Inhibitor,                    Negative Control	54642-23-8
+JAK3 Inhibitor VI	856436-16-3
+JNK Inhibitor V	345987-15-7
+JNK Inhibitor VIII	894804-07-0
+JNK Inhibitor IX	312917-14-9
+K-252a, Nocardiopsis sp. 	97161-97-2
+Kenpaullone	142273-20-9
+KN-62	127191-97-3
+KN-93	139298-40-1
+Lck Inhibitor	213743-31-8
+LY 294002	154447-36-6
+LY 303511- Negative control	154447-38-8
+MEK Inhibitor I	297744-42-4
+MEK Inhibitor II	623163-52-0
+MEK1/2 Inhibitor	305350-87-2
+Met Kinase Inhibitor	658084-23-2
+MNK1 Inhibitor	522629-08-9
+MK2a Inhibitor	41179-33-3
+NF-kB Activation Inhibitor	545380-34-5
+p38 MAP Kinase Inhibitor III 	581098-48-8
+p38 MAP Kinase Inhibitor	219138-24-6
+PD 98059	167869-21-8
+PD 169316	152121-53-4
+PD 158780	171179-06-9
+PD 174265	216163-53-0
+PDGF Receptor Tyrosine Kinase Inhibitor II	249762-74-1
+PDGF Receptor Tyrosine Kinase Inhibitor III	205254-94-0
+PDGF Receptor Tyrosine Kinase Inhibitor IV	627518-40-5
+PDGF RTK Inhibitor	347155-76-4
+PDK1/Akt/Flt Dual Pathway Inhibitor	331253-86-2
+PKR Inhibitor	608512-97-6
+PKR Inhibitor, Negative Control	852547-30-9
+PI-103	371935-74-9
+PI 3-Kg Inhibitor 	648450-29-7
+PI 3-Kg Inhibitor II 	648449-76-7
+PP3	5334-30-5
+PP1 Analog II, 1NM-PP1	221244-14-0
+Staurosporine, N-benzoyl-	120685-11-2
+PKCbII/EGFR Inhibitor	145915-60-2
+PKCb Inhibitor	257879-35-9
+Purvalanol A	212844-53-6
+Rapamycin	53123-88-9
+Rho Kinase Inhibitor III, Rockout	7272-84-6
+Rho Kinase Inhibitor IV	913844-45-8
+Ro-32-0432	151342-35-7
+SB 202474 	172747-50-1
+SB 202190	152121-30-7
+SB 203580	152121-47-6
+SB220025	165806-53-1
+SB 218078	135897-06-2
+SC-68376	318480-82-9
+SKF-86002	72873-74-6
+Sphingosine Kinase Inhibitor	312636-16-1
+Src Kinase Inhibitor I	179248-59-0
+Staurosporine, Streptomyces sp.	62996-74-1
+STO-609	52029-86-4
+SU6656	330161-87-0
+SU9516	666837-93-0
+SU11652	326914-10-7
+Syk Inhibitor	622387-85-3
+Syk Inhibitor II	227449-73-2
+Syk Inhibitor III	1485-00-3
+Tpl2 Kinase Inhibitor	871307-18-5
+TGF-b RI Kinase Inhibitor	396129-53-6
+TGF-b RI Inhibitor III	356559-13-2
+AG 9 	2826-26-8
+AG 490	133550-30-8
+AG 112	144978-82-5
+AG 1295	71897-07-9
+AG 1296	146535-11-7
+AG 1478	175178-82-2
+VEGF Receptor 2 Kinase Inhibitor I	15966-93-5
+VEGF Receptor Tyrosine Kinase Inhibitor II	269390-69-4
+VEGF Receptor Tyrosine Kinase Inhibitor III, KRN633	286370-15-8
+VEGF Receptor 2 Kinase Inhibitor II	288144-20-7
+VEGF Receptor 2 Kinase Inhibitor III	204005-46-9
+VEGF Receptor 2 Kinase Inhibitor IV	216661-57-3
+Wortmannin	19545-26-7
+ROCK Inhibitor, Y-27632	146986-50-7
+Bosutinib	380843-75-4
+Dasatinib	302962-49-8
+Dovitinib	405169-16-6
+Erlotinib	183319-69-9
+Gefitinib	184475-35-2
+Imatinib	220127-57-1
+Lapatinib	231277-92-2
+Masitinib	790299-79-5
+Mubritinib	366017-09-6
+Nilotinib	641571-10-0
+Pazopanib	444731-52-6
+Roscovitine 	186692-46-6
+Sorafenib	284461-73-0
+Sunitinib	557795-19-4
+Tandutinib 	387867-13-2
+Tofacitinib	477600-75-2
+Tozasertib	639089-54-6
+Vandetanib	443913-73-3
+Vatalanib	212141-51-0
+VX-702	745833-23-2
